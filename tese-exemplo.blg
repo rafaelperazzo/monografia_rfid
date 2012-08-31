@@ -1,0 +1,45 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: tese-exemplo.aux
+The style file: plainnat-ime.bst
+Database file #1: bibliografia.bib
+You've used 21 entries,
+            2750 wiz_defined-function locations,
+            730 strings with 8211 characters,
+and the built_in function-call counts, 7865 in all, are:
+= -- 750
+> -- 351
+< -- 22
++ -- 125
+- -- 104
+* -- 491
+:= -- 1254
+add.period$ -- 65
+call.type$ -- 21
+change.case$ -- 72
+chr.to.int$ -- 21
+cite$ -- 42
+duplicate$ -- 383
+empty$ -- 665
+format.name$ -- 133
+if$ -- 1657
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 19
+newline$ -- 113
+num.names$ -- 86
+pop$ -- 201
+preamble$ -- 1
+purify$ -- 55
+quote$ -- 0
+skip$ -- 258
+stack$ -- 0
+substring$ -- 287
+swap$ -- 52
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 216
+warning$ -- 0
+while$ -- 88
+width$ -- 0
+write$ -- 326

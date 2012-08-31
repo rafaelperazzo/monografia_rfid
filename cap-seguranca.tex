@@ -1,0 +1,70 @@
+%% ------------------------------------------------------------------------- %%
+\chapter{Segurança e privacidade}
+\label{cap:seguranca}
+
+Segundo o dicionário AURÉLIO, informação é um dado acerca de alguém ou algo; o conhecimento; segundo a teoria da informação, a medida da redução da incerteza. A segurança da informação pode ser definida como a proteção contra um grande número de ameaças às informações, de forma a assegurar a continuidade do negócio, minimizando danos comerciais e maximizando o retorno de possibilidades e investimentos. \cite{tanenbaum:2003} caracteriza segurança pela preservação dos três atributos básicos da informação: confidencialidade, integridade e disponibilidade.
+
+Um sistema seguro, segundo \cite{stallings:2002} e \cite{tanenbaum:2003} deve garantir as seguintes características: 
+
+\begin{itemize}
+
+\item \textbf{privacidade}: A privacidade garante que ninguém está ''farejando'' o que está sendo transmitindo na rede (comunicação leitor-tag e tag-leitor) sem estar autorizado.
+\item \textbf{autenticação}: A autenticação garante que a origem da mensagem foi corretamente identificada, com a certeza de que a identificação não é falsa, ou seja, a origem é realmente quem diz ser.
+\item \textbf{integridade}: A integridade garante que o que foi transmitido não foi alterado, de forma nenhuma, durante a transmissão.
+\item \textbf{não repúdio}:  O não-repúdio consiste no fato de requerer que nem o remetente nem o destinatário de uma mensagem sejam capazes de negar a mensagem, nem de negar que tenha sido enviada, nem negar que tenha sido recebida, se realmente isso tenha acontecido.
+\item \textbf{controle de acesso}: O Controle de Acesso requer que o acesso à informação possa ser controlado pela rede que contenha a informação. Algumas vezes, se quer dar acesso somente de leitura a um arquivo, ou no caso dos sistemas RFID, pode ser desejável que apenas leitores autorizados consultem o conteúdo das tags.
+\item \textbf{disponibilidade}: a disponibilidade requer que o sistema computacional esteja disponível para qualquer pessoa autorizada em qualquer momento que ela deseje
+
+\end{itemize}
+
+%------------------------------------------------------
+\section{Principais problemas de segurança e privacidade em sistemas RFID} 
+
+Segundo \cite{ouafi:2012} e \cite{erguler:2011} os grandes ganhos de eficiência oferecidos pelos sistemas RFID podem vir com um custo em segurança e privacidade. Vulnerabilidades como ataques físicos, plágio ou falsificação (\textit{spoofing}), captura de tráfego, análise de tráfego e negação de serviço podem todas estar presentes nesses sistemas. E cada um destes riscos, conforme relatado por \cite{sarma:2003}, pode afetar ambos os indivíduos e organizações . Até mesmo as mais modernas tags especificadas pela EPCGlobal, as chamadas Gen 2, \cite{epcglobal:2004}, não oferecem segurança adequada aos usuários. Na maioria dos casos, o custo de fabricação de tags com \textit{hardware} de criptografia, é bastante elevado, invibializando a utilização da tecnologia em diversos cenários possíveis. A Tabela \ref{tab:seguranca}, resumida por \cite{mota:2006}, ilustra o cenário de problemas.
+
+\begin{table}[h!]
+	\centering
+    \begin{tabular}{ | p{5cm} | p{5cm} | p{5cm} |}
+    \hline
+    Tipo & Como funciona & Abordagem \\ \hline
+    
+    Físico & O intruso pode realizar ataques físicos às tags. & Esquemas de segurança física de objetos, como contratação de seguranças, sistemas de câmeras, etc.  \\ \hline
+    
+    PLÁGIO ou FALSIFICAÇÃO (fabricação) & O intruso pode realizar consultas às tags e responder consultas a leitores legítimos. & Esquemas de autenticação e controle de acesso.\\ \hline
+    
+    INTERCEPTAÇÃO (e modificação) & O intruso captura os quadros que trafegam no ar, também chamado de espionagem.  & Esquemas de criptografia dos dados que são enviados entre as entidades leitor e tag.    \\ \hline
+    
+    NEGAÇÃO DE SERVIÇO (interrupção) & O intruso atrapalha as difusões interferindo nos sinais de radiofreqüência.  & Muito difíceis de serem evitados, e por isso são bastante danosos.    \\ \hline
+    
+    PRIVACIDADE DE LOCALIZAÇÃO (RASTREAMENTO) & O intruso faz leituras nas tags que o usuário carrega podendo rastrear a localização do usuário.  & Esquemas de autenticação e controle de acesso.    \\ \hline
+    
+\end{tabular}
+    
+\caption{Principais problemas de segurança em sistemas RFID}
+\label{tab:seguranca}
+
+\end{table}
+%------------------------------------------------------
+\section{Algumas soluções propostas} 
+
+Na literatura, diversas soluções foram propostas\footnote{http://www.avoine.net/rfid/} para eliminar ou minimizar vários tipos de problemas relacionados à segurança e privacidade. Apresentaremos agora aquelas desenvolvidas pelos mais importantes pesquisadores da área \citep{erguler:2011}. 
+
+\subsection{\textit{Killing} tags}
+
+Esta abordagem permite que o leitor envie um comando \textit{kill} para a tag que torna-se permanentemente inoperante. Como ''tags mortas'' não podem ser reativadas, o processo de ''matar'' a tag é uma medida altamente eficaz em termos de privacidade. As previsões de que as etiquetas RFID vão tornar-se predominantes em itens compras, os próprios estabelecimentos devem ''matar'' as etiquetas RFID dos produtos comprados, para proteger privacidade do consumidor. Por exemplo, depois de passar com seu carrinho de supermercado através de um caixa automatizado e pagar a conta 
+total, todas os produtos com tags RFID serão desativados no local \citep{eibm:2012}.
+
+\subsection{\textit{Minimalist cryptography}}
+
+\cite{juels:2004} propos um esquema de criptografia denominada ''minimalista'': Esta é uma solução baseada em pseudônimos pré-programados carregados pelas tags. Através da utilização de diferentes pseudônimos durante sessões diferentes de leituras, a tag evita o rastreamento por entidades não autorizadas. Já uma entidade autorizada tem acesso aos pseudônimos e pode realizar o rastreamento se for o caso. A proposta descreve um protocolo que possui propriedades de autenticação e privacidade, preocupando-se com as limitações do poder de computação e da capacidade de armazenamento. Não envolve cálculos criptográficos intensivos e nem envolve a necessidade de aumento de recursos das tags.
+
+\subsection{Autenticação mútua}
+
+\cite{fernandoa:2011} em seu trabalho abordaram o problema da segurança em sistemas RFID. Os mesmos desenvolveram e apresentaram um protocolo de segurança que permite autenticação mútua entre o leitor e a tag, bem como a comunicação segura dos dados de tag. O protocolo apresentado utiliza um método híbrido para fornecer segurança forte, assegurando os requisitos de recursos são baixos. Para este fim, emprega uma simples mistura de funções hash e operações de baixo custo, bit a bit. O protocolo garante a confidencialidade e integridade de todos os dados que estão sendo comunicados e permite a autenticação de confiança mútua entre as tags e leitores. O protocolo apresentado também é dito ser resistente a um grande número de ataques comuns.
+
+\cite{malekm:2012} desenvolveu um protocolo de autenticação mútua entre tags e leitores, ou seja, ambas as entidades autenticam uma a outra. O protocolo proposto é baseado no sistema criptográfico publicado por \cite{mceliece:1978} com a diferença de que não é necessário que as tags armazenam matrizes esparssas, conforme o protocolo McEliece. Operações computacionais complexas são substituidas por operações binárias simples em vetores pequenos. A quantidade de memória necessária para as tags encaixa-se na utilização em etiquetas de baixo custo. Os leitores são os responsáveis pelas operações de encriptação e desencriptação envolvidas no protocolo McEliece. Após cada autenticação, o conteúdo das tags é disponibilizado e posteriormente a tag fica pronta para uma nova autenticação. Dessa forma, temos que o protocolo proposto assegura que apenas leitores autorizados possam consultas as tags, protegendo assim o sistema contra violação de privacidade. 
+
+\cite{zhouzxn:2012} em sua publicação, também apresentam um protocolo de autenticação mútua baseado em criptografia com curvas elipticas para sistemas RFID. Considerando-se segurança e eficiencia entre as partes (tags e leitores), ambas não possuem a chave secreta em comum para compartilhar no protocolo, o que é considerada uma vantagem em relação a outros protocolos. OO protocolo proposto é densenvolvido para a minimização da computação nas tags. Os autores mostraram que o protocolo é escalável e apresentaram uma prova da confiabilidade do protocolo.
+
+
+

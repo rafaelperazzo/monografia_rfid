@@ -1,0 +1,149 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ahson e Ilyas(2008)]{ahson:2008}{\bf Ahson e Ilyas(2008)}
+S.~Ahson e M.~Ilyas.
+\newblock \emph{RFID handbook: applications, technology, security, and
+  privacy}.
+\newblock CRC.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Elkhiyaoui {\rm{\em et~al.}}(2012)Elkhiyaoui, Blass, e
+  Molva]{eibm:2012}{\bf Elkhiyaoui {\rm{\em et~al.}}(2012)}
+Kaoutar Elkhiyaoui, Erik-Oliver Blass e Refik Molva.
+\newblock {T-MATCH}: Privacy-preserving item matching for storage-only {RFID}
+  tags.
+\newblock Em \emph{Workshop on RFID Security -- RFIDSec'12}, Nijmegen,
+  Netherlands.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[EPCglobal(2004)]{epcglobal:2004}{\bf EPCglobal(2004)}
+EPC EPCglobal.
+\newblock Radio-frequency identity protocols class-1 generation-2 uhf rfid
+  protocol for communications at 860 mhz--960 mhz version 1.0. 9.
+\newblock \emph{URL: http://www. epcglobalinc. org/standards}.   {\scriptsize
+  Citado na p\'{a}g.}
+
+\bibitem[Erguler(2011)]{erguler:2011}{\bf Erguler(2011)}
+Imran Erguler.
+\newblock \emph{Security and Privacy Analysis of Authentication Protocols in
+  {RFID} Systems}.
+\newblock Tese de Doutorado, Bogazici University, Bogazici University
+  Electrical-Electronics Engineering, Istanbul, Turkey.   {\scriptsize Citado
+  na p\'{a}g.}
+
+\bibitem[Fernando e Abawajy(2011)]{fernandoa:2011}{\bf Fernando e
+  Abawajy(2011)}
+Harinda Fernando e Jemal Abawajy.
+\newblock Mutual authentication protocol for networked {RFID} systems.
+\newblock Em \emph{10th International Conference on Trust, Security and Privacy
+  in Computing and Communications -- TrustCom 2011}, p\'{a}ginas 417--424.
+  {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Juels(2006)]{juels:2006}{\bf Juels(2006)}
+A.~Juels.
+\newblock Rfid security and privacy: A research survey.
+\newblock \emph{Selected Areas in Communications, IEEE Journal on}, 24\penalty0
+  (2):\penalty0 381--394.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Juels(2004)]{juels:2004}{\bf Juels(2004)}
+Ari Juels.
+\newblock {Minimalist Cryptography for Low-Cost RFID Tags}.
+\newblock Em Carlo Blundo e Stelvio Cimato, editors, \emph{International
+  Conference on Security in Communication Networks -- SCN 2004}, volume 3352 of
+  \emph{Lecture Notes in Computer Science}, p\'{a}ginas 149--164, Amalfi,
+  Italy. Springer.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Knospe e Pohl(2004)]{knospe:2004}{\bf Knospe e Pohl(2004)}
+H.~Knospe e H.~Pohl.
+\newblock Rfid security.
+\newblock \emph{Information Security Technical Report}, 9\penalty0
+  (4):\penalty0 39--50.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Malek e Miri(2012)]{malekm:2012}{\bf Malek e Miri(2012)}
+Behzad Malek e Ali Miri.
+\newblock Lightweight mutual {RFID} authentication.
+\newblock Em \emph{IEEE International Conference on Communications -- ICC2012},
+  Ottawa, Canada.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[McEliece(1978)]{mceliece:1978}{\bf McEliece(1978)}
+R.J. McEliece.
+\newblock A public-key cryptosystem based on algebraic coding theory.
+\newblock \emph{DSN progress report}, 42\penalty0 (44):\penalty0 114--116.
+  {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Mota(2006)]{mota:2006}{\bf Mota(2006)}
+R.P.B. Mota.
+\newblock Extens{\~o}es ao protocolo de comunica{\c{c}}{\~a}o epcglobal para
+  tags classe 1 utilizando autentica{\c{c}}{\~a}o com criptografia de baixo
+  custo para seguran{\c{c}}a em identifica{\c{c}}{\~a}o por
+  radiofreq{\"u}{\^e}ncia.
+\newblock Disserta\c{c}\~{a}o de Mestrado, Universidade Federal de S\~ao
+  Carlos, Bogazici University Electrical-Electronics Engineering, Istanbul,
+  Turkey.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Ouafi(2012)]{ouafi:2012}{\bf Ouafi(2012)}
+Khaled Ouafi.
+\newblock \emph{Security and Privacy in {RFID} Systems}.
+\newblock Tese de Doutorado, EPFL, Lausanne, Switzerland.   {\scriptsize Citado
+  na p\'{a}g.}
+
+\bibitem[Ranasinghe {\rm{\em et~al.}}(2004)Ranasinghe, Engels, e
+  Cole]{ranasinghe:2004}{\bf Ranasinghe {\rm{\em et~al.}}(2004)}
+D.~Ranasinghe, D.~Engels e P.~Cole.
+\newblock Low-cost rfid systems: Confronting security and privacy.
+\newblock Em \emph{Auto-ID labs research workshop}, p\'{a}ginas 54--77.
+  Citeseer.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Roberts(2006)]{roberts:2006}{\bf Roberts(2006)}
+C.M. Roberts.
+\newblock Radio frequency identification (rfid).
+\newblock \emph{Computers \& Security}, 25\penalty0 (1):\penalty0 18--26.
+  {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Sarma {\rm{\em et~al.}}(2003)Sarma, Weis, e Engels]{sarma:2003}{\bf
+  Sarma {\rm{\em et~al.}}(2003)}
+S.~Sarma, S.~Weis e D.~Engels.
+\newblock Rfid systems and security and privacy implications.
+\newblock \emph{Cryptographic Hardware and Embedded Systems-CHES 2002},
+  p\'{a}ginas 1--19.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Stallings(2002)]{stallings:2002}{\bf Stallings(2002)}
+W.~Stallings.
+\newblock \emph{Wireless communications and networking}.
+\newblock Prentice Hall.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Tanenbaum(2003)]{tanenbaum:2003}{\bf Tanenbaum(2003)}
+A.~Tanenbaum.
+\newblock \emph{Redes de Computadores, 4{\textordfeminine}. edi{\c{c}}{\~a}o
+  traduzida, Editora Campus}.
+\newblock Elsevier.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Verdult(2008)]{verdult:2008}{\bf Verdult(2008)}
+Roel Verdult.
+\newblock {Security analysis of RFID tags}.
+\newblock Disserta\c{c}\~{a}o de Mestrado, Radboud University Nijmegen.
+  {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Want(2006)]{want:2006}{\bf Want(2006)}
+R.~Want.
+\newblock An introduction to rfid technology.
+\newblock \emph{Pervasive Computing, IEEE}, 5\penalty0 (1):\penalty0 25--33.
+  {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Weis(2003)]{weis:2003master}{\bf Weis(2003)}
+Stephen Weis.
+\newblock {Security and Privacy in Radio-Frequency Identification Devices}.
+\newblock Master thesis, Massachusetts Institute of Technology (MIT), MIT,
+  Massachusetts, USA.   {\scriptsize Citado na p\'{a}g.}
+
+\bibitem[Zhou {\rm{\em et~al.}}(2012)Zhou, Zhou, Xiao, e Niu]{zhouzxn:2012}{\bf
+  Zhou {\rm{\em et~al.}}(2012)}
+Jingxian Zhou, Yajian Zhou, Feng Xiao e Xinxin Niu.
+\newblock Mutual authentication protocol for mobile {RFID} systems.
+\newblock \emph{Journal of Computational Information Systems}, 8\penalty0
+  (8):\penalty0 3261--3268.   {\scriptsize Citado na p\'{a}g.}
+
+\end{thebibliography}

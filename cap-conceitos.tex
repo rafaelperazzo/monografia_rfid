@@ -1,0 +1,114 @@
+%% ------------------------------------------------------------------------- %%
+\chapter{O sistema RFID}
+\label{cap:conceitos}
+
+\section{Componentes de um Sistema RFID}
+
+	Um sistema RFID é formado por 3 componentes básicos \citep{want:2006} \citep{verdult:2008} 
+	\begin{itemize}
+		\item \textit{Transponder} ou tag RFID: localizada no objeto a ser identificado, armazenando o código de identificação.
+		
+		\item \textit{Transceiver} ou leitor RFID: responsável pela leitura/escrita na tag.
+		
+		\item \textit{Middleware} ou banco de dados: responsável pelo processamento da informação obtida pelo leitor.
+	\end{itemize}
+
+	A Figura \ref{Figura1} ilustra um sistema RFID genérico.
+	
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{figuras/fig1.jpg} 
+\caption{ {\small O sistema RFID}}
+\label{Figura1}
+\end{figure}	
+
+\subsection{Tags RFID}
+\label{sec:tags}
+
+Tags RFID (\textit{Transponders}) consistem de um microchip que armazena os dados e um elemento de acoplamento, tal como uma antena, utilizada para a comunicação através da radiofrequencia. A Figura \ref{Figura3} ilustra um exemplo de tag. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{figuras/fig3.jpg} 
+\caption{ {\small Tag RFID}}
+\label{Figura3}
+\end{figure}	
+
+Podem ser classificadas conforme as seguintes características: 
+
+\begin{itemize}
+
+\item Energização
+\item Leitura/Escrita
+\item Frequência de operação
+
+\end{itemize}
+
+A classificação de acordo com o tipo de energização classifica as tags em ativas, semi-passivas e passivas. Tags ativas contêm uma fonte de energia própria, como uma bateria, possuindo a habilidade de iniciar sua própria comunicação com o leitor como também com outras tags. Tags semi-passivas possuem bateria, mas podem apenas responder à transmissões que cheguem até elas. Tags passivas recebem toda energia através do leitor e não podem iniciar nenhuma comunicação por iniciativa própria. Para oferecer uma analogia de como o processo de energização passiva funciona, devemos pensar que os leitores ''gritam'' para as tags passivas, e depois extraem os dados resultantes do ''eco''. Tags passivas são completamente inativas na ausência de umv leitor \citep{knospe:2004}. As etiquetas passivas não utilizam uma fonte de energia própria, em vez disso eles capturam energia eletromagnética produzida pelo leitor através de indução magnética e utilizam essa energia para enviar sinais para as antenas (ver Figura \ref{Figura2}).
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{figuras/fig2.jpg} 
+\caption{ {\small Energização de uma tag passiva}}
+\label{Figura2}
+\end{figure}	
+
+Outra forma de classificar as tags é de acordo com as capacidades de leitura/escrita \cite{epcglobal:2004} 
+\begin{itemize}
+
+\item Classe 1: são etiquetas onde grava-se uma vez e lê-se várias (\textit{Write once ? read many}). A idéia principal é que os dados são gravados apenas uma vez. São geralmente usadas para a simples identificação de produtos ou em cartões de acesso. São o tipo de etiquetas mais utilizadas no mundo inteiro devido a sua especificação estar completa e operacional, além de possuir custos menores em relação às demais.
+
+\item Classe 2: permitem tanto leitura quanto gravação (várias vezes). Tipicamente possuem mais memória e capacidade de gerar logs.
+
+\item Classe 3: também possuem capacidade de leitura e escrita mas também possuem sensores acoplados. Possuem circuitos para registrar temperatura, pressão entre outros.
+
+\item Classe 4: são as mais sofisticadas que além de possuírem todos os recursos oferecidos pelas Classes anteriores, estas possuem capacidade de iniciar comunicação com outras tags ou dispositivos com ou sem a presença de um leitor. Para operar independentemente do leitor estas tags precisam possuir bateria própria \cite{roberts:2006}.
+
+\end{itemize}
+
+Já a classificação relacionada a frequência de operação caracteriza as tags da seguinte forma \citep{epcglobal:2004}: 
+
+\begin{itemize}
+
+\item Frequência menos do que 135Khz: São tags passivas, de baixo custo, baixa velocidade de leitura e baixos níveis de energia. Temos como exemplos a utilização em fechaduras de carros, e controle de acesso.
+
+\item Frequência de 13.56Mhz: São geralmente passivas, também de baixo custo, e velocidade de leitura um pouco maior. São bastante utilizadas em controle de acesso e \textit{smartcards}.
+
+\item Frequência de 860-930Mhz: Podem ser ativas ou passivas e possuem custo mais elevado que as anteriores, porém com velocidade de leitura mais alta. Cadeias de suprimento e estoques são os principais exemplos de sua utilização.
+
+\item 2.45Ghz: São ativas, possuem altíssima velocidade de leitura, custo elevado e são utilizadas geralmente em objetos de alto valor agregado.
+
+\end{itemize}
+
+As ondas de radiofreqüência variam de 30Khz a 300Ghz. Apenas algumas faixas de freqüências estão disponíveis para sistemas RFID. Certas faixas de freqüências adequam-se melhor a aplicações específicas. Sistemas RFID que operam nas faixas de 13.56Mhz e entre 860-930Mhz são os mais disseminados e utilizados pela industria. A freqüência de 13.56Mhz é bastante comum devido a disseminação dos cartões inteligentes (\textit{smartcards}) baseados na tecnologia RFID. Já a freqüência entre 860-930Mhz são muito práticas para utilização em controle de estoque e cadeia de suprimentos pois oferece um bom alcance (alguns metros) como também possui o recurso da leitura de várias tags em alta velocidade de leitura.
+
+\subsection{Leitores RFID}
+\label{sec:leitores}
+
+Os leitores são os dispositivos que consultam as tags por seus dados, através de uma interface de radiofrequência. A comunicação com as tags além de envolver a requisição dos dados das tags pode ainda incluir comandos de escrita de dados na tag, se esta permitir \citep{ranasinghe:2004} \citep{weis:2003master}. Leitores possuem sua própria fonte de energia, capacidade de processamento e uma antena de comunicação. Podem ser dispositivos a parte, ou seja, com funcionalidade apenas de leitor RFID, podem aparecer acoplados a outros dispositivos como \textit{smartphones}, gps ou mesmo aparecerem fixos em prateleiras inteligentes \citep{knospe:2004}. A Figura \ref{Figura4} ilustra um exemplo de leitor RFID portátil e sem acoplamento com outro dispositivo.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{figuras/fig4.jpg} 
+\caption{ {\small Exemplo de leitor RFID portátil}}
+\label{Figura4}
+\end{figure}	
+
+No contexto global do sistema RFID, os leitores são posicionados como a entidade central,
+pois se localizam no centro da comunicação, entre as tags e o \textit{middleware}.
+
+Outro ponto importante relacionado aos leitore RFID está relacionado aos canais de comunicação: chama-se de canal \textit{forward} o canal leitor para tag e de \textit{backward} o canal tag para leitor. O alcance de ambos os canais depende dos tipos de dispositivos utilizados, e podem variar de alguns centímetros a vários metros de distância \citep{knospe:2004}. Independente dos dispositivos utilizados no sistema, sempre existirá a chamada assimetria entre os canais \textit{forward} e \textit{backward}, ou seja, teremos que o canal forward terá um alcance bem maior que o canal backward, o que gera problemas de segurança que serão discutidos Capítulo \ref{cap:seguranca} \citep{juels:2006}.
+
+Se existem mais de uma tag dentro do alcance do leitor, um mecanismo anti-colisão é necessário. Um exemplo de algoritmo determinístico simples é o percurso em árvore binária (\textit{binary tree walking}) onde o leitor questionará todas as tags na vizinhança para o próximo bit de seus identificadores. Se dois valores diferentes de bits forem transmitidos de um conjunto de tags, o leitor será capaz de detectar a colisão. O leitor então fará uma difusão de um bit indicando se tags que enviaram um 0 ou um 1 devem continuar. Essencialmente, o leitor escolhe uma ramificação da árvore binária de valores de identificadores. Tags que não se enquadram na escolha do leitor não continuarão participando do protocolo. À medida que o leitor continua a percorrer as ramificações da árvore binária, poucas tags continuarão operando. Assim no fim do algoritmo apenas uma tag estará respondendo. Este processo de endereçar e isolar uma única tag pode ser chamado de \textbf{singularização} \citep{sarma:2003}.
+
+\subsection{\textit{Middleware}}
+\label{sec:middleware}
+
+\textit{Middleware} é um termo genérico utilizado para descrever o \textit{software} que está entre o leitor e as aplicações empresariais \citep{weis:2003master}. As empresas necessitam de servidores para executar o middleware dentro de um centro de distribuição, depósito, instalação de produção ou aplicação específica. Esses servidores são chamados servidores de borda, porque eles estão perto da borda da rede em que o mundo digital ou eletrônico se encontra com o mundo real. Os servidores de borda são servidores comuns e normalmente não possuem nenhum hardware especial. Conectam aos leitores usando serial ou Universal Serial Bus (USB).
+
+Segundo \cite{ahson:2008} e \cite{weis:2003master}, um sistema RFID só torna-se efetivamente completo e utilizável na prática, quando os leitores interagem de alguma maneira com uma aplicação externa. Devido à flexibilidade desta entidade, temos que sistemas computacionais independentes podem ser construídas por qualquer pessoa para atender as necessidades da aplicação específica. Os dados armazenados geralmente incluem nome do produto, fabricante, validade, chave de criptografia entre outros detalhes escolhidos de acordo com aplicação do sistema.
+
+
+
+
+
